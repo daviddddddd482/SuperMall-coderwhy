@@ -1,0 +1,73 @@
+/* 获取初始化css,GitHub上down */
+
+@import url('./normalise.css');
+/* 获取根元素HT */
+
+
+/* 提前定义一些变量 */
+:root {
+    /* 字体颜色 */
+    --color-text: #666;
+
+    /* 高亮 */
+    --color-high-text: #ff8198;
+
+    /* 整体的背景颜色 */
+    --color-tint: #ff8198;
+
+    /* 白色背景 */
+    --color-background: #FFF;
+
+    /* 整体上的字体大小 */
+    --font-size: 14px;
+
+    --line-height: 1.5;
+
+    --large-size: 50px;
+}
+
+/* 伪元素的统一样式 */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    user-select: none; /* 禁止用户鼠标在页面上选中文字/图片等 */
+    -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
+    background: var(--color-background);
+    color: var(--color-text);
+    /* rem vw/vh */
+    width: 100vw;
+  }
+  
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  
+  
+  .clear-fix::after {
+    clear: both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  .clear-fix {
+    zoom: 1;
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  
