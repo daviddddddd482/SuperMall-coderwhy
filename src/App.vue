@@ -1,15 +1,17 @@
 <template>
   <div id="app">
-    <Home />
+    <MainTabBar  />
   </div>
 </template>
 
 <script>
-import Home from '@/views/home/Home'  
+// import Home from '@/views/home/Home'  
+import MainTabBar from "@/components/content/mainTabBar/MainTabBar.vue";
   export default {
     name: 'App',
     components: {
-      Home,
+      // Home,
+      MainTabBar
      }
   }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-      <MainTabBar  />
+      <main-tab-bar></main-tab-bar>
   </div>
 </template>
 <script>
