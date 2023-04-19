@@ -8,6 +8,7 @@ import MainTabBar from "@/components/content/mainTabBar/MainTabBar.vue";
 export default {
   components: {
     MainTabBar
+    // 这里是lxh
   }
 };
 </script>
